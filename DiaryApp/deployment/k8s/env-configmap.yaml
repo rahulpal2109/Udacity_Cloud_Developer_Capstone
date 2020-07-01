@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  URL: http://localhost:8100
+  JWT_SECRET: rahulpal
+  AWS_PROFILE: default
+  POSTGRESS_DATABASE: udagrampaldev
+  POSTGRESS_HOST: udagrampaldev.ckmxzfl4edtn.ap-south-1.rds.amazonaws.com
+metadata:
+  name: env-config

@@ -1,0 +1,18 @@
+<ion-card class="col-lg-2 col-md-2 col-sm-12 col-xs-12" style="height: 300px; width: 350px; margin: 30px 30px 30px 30px; padding: 0px 20px 0px 20px; background: var(--ion-color-primary-contrast);" *ngIf="diaryItem">
+  <ion-card-header>
+    <ion-card-subtitle>
+      <ion-label float-left=""><b>{{diaryItem.email.substr(0, diaryItem.email.lastIndexOf('@')).toUpperCase()}}</b></ion-label>
+      <ion-label float-right=""><b>{{diaryItem.recordDate}}</b></ion-label>
+    </ion-card-subtitle>
+  </ion-card-header>
+  <hr style="width:50%;text-align:left;margin-left:0; color: #1e2023">
+  <ion-card-content>
+    <!--<ion-textarea float-left="" auto-grow="true">{{diaryItem.notes}}</ion-textarea>-->
+    <ion-label text-wrap>{{diaryItem.notes}}</ion-label>
+    <br>
+    <br>
+    <ion-label float-right="true"><b>Length: </b>{{diaryItem.notes.length}}</ion-label>
+  </ion-card-content>
+  <ion-card-content></ion-card-content>
+  <!--<hr style="width:50%;text-align:left;margin-left:0; color: #1e2023">-->
+</ion-card>

@@ -1,0 +1,12 @@
+<div class="ion-text-end">
+  <label><h3>Your Personal Note Diary</h3></label>
+  <ion-button
+      item-end
+      color="primary"
+      type="submit"
+      [disabled]="!isLoggedIn"
+      (click)="presentUploadForm($event)">
+    Create a New Note
+  </ion-button>
+</div>
+<br>
