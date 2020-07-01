@@ -1,0 +1,25 @@
+version: "3"
+services:
+  reverseproxy:
+    image: rahulpal210991/diaryapp-reverseproxy
+    ports:
+      - 8080:8080
+    restart: always
+    depends_on:
+      - backend-user
+  backend-user:
+    image: rahulpal210991/diaryapp-restapi-user
+    volumes:
+      - $HOME/.aws:/root/.aws
+    environment:
+      POSTGRESS_USERNAME: $POSTGRESS_USERNAME
+      POSTGRESS_PASSWORD: $POSTGRESS_PASSWORD
+      POSTGRESS_DATABASE: $POSTGRESS_DATABASE
+      POSTGRESS_HOST: $POSTGRESS_HOST
+      AWS_PROFILE: $AWS_PROFILE
+      JWT_SECRET: $JWT_SECRET
+      URL: "http://localhost:8100"
+  frontend:
+    image: rahulpal210991/diaryapp-frontend:local
+    ports:
+      - "8100:80"

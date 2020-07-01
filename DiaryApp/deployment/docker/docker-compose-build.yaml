@@ -1,0 +1,15 @@
+version: "3"
+services:
+  reverseproxy:
+    build:
+      context: .
+    image: rahulpal210991/diaryapp-reverseproxy
+  backend_user:
+    build:
+      context: ../../user
+    image: rahulpal210991/diaryapp-restapi-user
+  frontend:
+    build:
+      context: ../../frontend
+    image: rahulpal210991/diaryapp-frontend:local
+

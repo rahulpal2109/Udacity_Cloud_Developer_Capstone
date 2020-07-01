@@ -1,0 +1,19 @@
+<form [formGroup]="uploadForm" (submit)="onSubmit($event)">`
+    <ion-item>
+      <ion-label position="floating" color="primary">Date</ion-label>
+      <ion-input type="date" formControlName="date" required></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-label position="floating" color="primary">Note</ion-label>
+      <ion-textarea formControlName="notes" auto-grow="true" maxlength="255"></ion-textarea>
+    </ion-item>
+    <br>
+    <h2 class="item-text-wrap"></h2>
+    <ion-button float-end="true"
+      color="primary"
+      type="submit"
+      [disabled]="!uploadForm.valid">
+      Post
+    </ion-button>
+</form>
