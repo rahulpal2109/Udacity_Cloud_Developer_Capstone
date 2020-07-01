@@ -1,4 +1,4 @@
-# Cloud Capstone Project         
+# Cloud Capstone Project         [![Build Status](https://travis-ci.com/rahulpal2109/rahul-final-project.svg?branch=master)](https://travis-ci.com/rahulpal2109/rahul-final-project)
 This repository is associated with Cloud Developer ND - Cloud Capstone Project.
 
 # Notes Diary App - Diary to track our notes
@@ -232,6 +232,14 @@ Logs are seen in Logs Group tab of cloudwatch:
 ![Alt text](/images/cloudwatch-logs.PNG "Logs")
 
 
+### 8. Setup Travis CI:
+
+[![Build Status](https://travis-ci.com/rahulpal2109/rahul-final-project.svg?branch=master)](https://travis-ci.com/rahulpal2109/rahul-final-project)
+
+![Alt text](/images/travis-ci1.PNG "Travis CI")
+
+![Alt text](/images/travis-ci2.PNG "Travis CI")
+
 
 ## Application:
 
@@ -247,8 +255,7 @@ Some screenshots of the application:
 
 <br>
 
-That's it folks!
 
-I will keep working on this project and make it production ready in sometime.
+I will improve the functionality and it will be production ready in sometime.
 
 Hope you like it ;)
